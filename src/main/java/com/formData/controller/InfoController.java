@@ -29,4 +29,9 @@ public class InfoController {
     public ResponseEntity<List<InformationDto>> getAll(){
         return ResponseEntity.ok(infoService.getAllUser());
     }
+
+    @GetMapping("/api")
+    public ResponseEntity<String> info(){
+        return ResponseEntity.ok("Succesffully running ");
+    }
 }
